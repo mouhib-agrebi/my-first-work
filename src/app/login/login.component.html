@@ -15,9 +15,9 @@
     <span class="error" ></span>
 
     <form >
-      <input type="text" id="email" [(ngModel)]="admin.email" class="fadeIn second" name="email" placeholder="email"  required>
-      <input type="password" [(ngModel)]="admin.password" id="password" class="fadeIn third"  name="password" placeholder="password" required>
-      <input  class="fadeIn fourth"  value="Log In" type="button" >
+      <input type="text" [(ngModel)]="admin.email"  id="email"  class="fadeIn second" name="email" placeholder="email"  required>
+      <input type="password"   [(ngModel)]="admin.password"  id="password" class="fadeIn third"  name="password" placeholder="password" required>
+      <input  class="fadeIn fourth"  (click)="login()" value="Log In" type="button"  >
     </form>
 
     <!-- Remind Passowrd -->

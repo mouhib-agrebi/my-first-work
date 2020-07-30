@@ -18,11 +18,13 @@
     "@angular/core": "~10.0.0",
     "@angular/fire": "^6.0.2",
     "@angular/forms": "~10.0.0",
+    "@angular/http": "^7.2.16",
     "@angular/platform-browser": "~10.0.0",
     "@angular/platform-browser-dynamic": "~10.0.0",
     "@angular/router": "~10.0.0",
+    "angularfire2": "^5.4.2",
     "bootstrap": "^3.4.1",
-    "firebase": "^7.16.0",
+    "firebase": "^7.17.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
@@ -46,5 +48,17 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mouhib-agrebi/my-first-work.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mouhib-agrebi/my-first-work/issues"
+  },
+  "homepage": "https://github.com/mouhib-agrebi/my-first-work#readme"
 }

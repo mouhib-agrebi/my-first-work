@@ -1,32 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-/*
-import { NgForm } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
-*/
 
-import { AdminService } from '../services/admin.services';
-import { Admin } from '../classes/admin';
 
-declare var M: any;
+import {Admin} from '../classes/admin';
+import { UserService } from  '../services/user.service';
 @Component({
   selector: 'login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'],
-  providers: [AdminService]
-  
+  styleUrls: ['./login.component.css']
 })
-
 export class LoginComponent implements OnInit {
-admins:Admin[];
 
+rmdp:string;
 admin:Admin;
-  constructor(private adminService: AdminService) { }
+  constructor(private adminService:UserService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.admin=new Admin();
+  }
+  login()
+  {
 
-  this.admin=new Admin();
-  
+    let us=Object.assign({},this.admin);
+    this.adminService.create_NewUser(us);
+
   }
 
-
-  }
+}

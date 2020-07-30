@@ -1,13 +1,13 @@
-[debug] [2020-07-20T11:03:27.626Z] ----------------------------------------------------------------------
-[debug] [2020-07-20T11:03:27.631Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mouhib\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-07-20T11:03:27.631Z] CLI Version:   8.6.0
-[debug] [2020-07-20T11:03:27.632Z] Platform:      win32
-[debug] [2020-07-20T11:03:27.632Z] Node Version:  v12.18.1
-[debug] [2020-07-20T11:03:27.633Z] Time:          Mon Jul 20 2020 13:03:27 GMT+0200 (GMT+02:00)
-[debug] [2020-07-20T11:03:27.634Z] ----------------------------------------------------------------------
-[debug] [2020-07-20T11:03:27.634Z] 
-[debug] [2020-07-20T11:03:27.657Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-07-20T11:03:27.661Z] > authorizing via signed-in user
+[debug] [2020-07-25T09:37:20.837Z] ----------------------------------------------------------------------
+[debug] [2020-07-25T09:37:20.841Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mouhib\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-07-25T09:37:20.842Z] CLI Version:   8.6.0
+[debug] [2020-07-25T09:37:20.842Z] Platform:      win32
+[debug] [2020-07-25T09:37:20.842Z] Node Version:  v12.18.1
+[debug] [2020-07-25T09:37:20.845Z] Time:          Sat Jul 25 2020 11:37:20 GMT+0200 (GMT+02:00)
+[debug] [2020-07-25T09:37:20.845Z] ----------------------------------------------------------------------
+[debug] [2020-07-25T09:37:20.845Z] 
+[debug] [2020-07-25T09:37:20.866Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-25T09:37:20.868Z] > authorizing via signed-in user
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -26,3 +26,116 @@ You're about to initialize a Firebase project in this directory:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
+[debug] [2020-07-25T09:37:57.295Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-07-25T09:37:57.296Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-07-25T09:37:57.905Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 25 Jul 2020 09:36:00 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-25T09:37:57.936Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-07-25T09:37:58.059Z] Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2020-07-25T09:37:58.636Z] FirebaseError: Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com
+    at Request._callback (C:\Users\mouhib\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\mouhib\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.onRequestError (C:\Users\mouhib\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:327:22)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.socketErrorListener (_http_client.js:426:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-07-25T09:40:04.029Z] ----------------------------------------------------------------------
+[debug] [2020-07-25T09:40:04.033Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mouhib\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-07-25T09:40:04.034Z] CLI Version:   8.6.0
+[debug] [2020-07-25T09:40:04.034Z] Platform:      win32
+[debug] [2020-07-25T09:40:04.034Z] Node Version:  v12.18.1
+[debug] [2020-07-25T09:40:04.036Z] Time:          Sat Jul 25 2020 11:40:04 GMT+0200 (GMT+02:00)
+[debug] [2020-07-25T09:40:04.037Z] ----------------------------------------------------------------------
+[debug] [2020-07-25T09:40:04.037Z] 
+[debug] [2020-07-25T09:40:04.052Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-25T09:40:04.054Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\mouhib\my-dream-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] 
+=== Firestore Setup
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2020-07-25T12:01:07.672Z] ----------------------------------------------------------------------
+[debug] [2020-07-25T12:01:07.676Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mouhib\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-07-25T12:01:07.677Z] CLI Version:   8.6.0
+[debug] [2020-07-25T12:01:07.677Z] Platform:      win32
+[debug] [2020-07-25T12:01:07.677Z] Node Version:  v12.18.1
+[debug] [2020-07-25T12:01:07.843Z] Time:          Sat Jul 25 2020 14:01:07 GMT+0200 (GMT+02:00)
+[debug] [2020-07-25T12:01:07.844Z] ----------------------------------------------------------------------
+[debug] [2020-07-25T12:01:07.844Z] 
+[debug] [2020-07-25T12:01:07.902Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-25T12:01:07.905Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\mouhib\my-dream-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-07-25T12:01:26.143Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-07-25T12:01:26.144Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-07-25T12:01:47.273Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-07-25T12:02:08.307Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (C:\Users\mouhib\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\mouhib\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\login.js:20:14)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at loadCommand (C:\Users\mouhib\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js:5:19)
+    at module.exports (C:\Users\mouhib\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js:89:20)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
